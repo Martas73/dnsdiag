@@ -39,7 +39,7 @@ There are several ways that you can use this toolset. However using the sourceco
 1. You can checkout this git repo and its submodules
 
 ```
-git clone https://github.com/farrokhi/dnsdiag.git
+git clone https://github.com/Martas73/dnsdiag.git
 cd dnsdiag
 pip3 install -r requirements.txt
 ```
@@ -52,7 +52,7 @@ pip3 install dnsdiag
 
 ## From Binary
 
-From time to time, binary version will be released for Windows, Mac OS X and Linux platforms. You can grab the latest release from [releases page](https://github.com/farrokhi/dnsdiag/releases).
+From time to time, binary version will be released for Windows, Mac OS X and Linux platforms. You can grab the latest release from [releases page](https://github.com/Martas73/dnsdiag/releases).
 
 # dnsping
 dnsping pings a DNS resolver by sending an arbitrary DNS query for given number
@@ -113,6 +113,23 @@ ns.ripe.net      174.855     160.949     187.458     10.099      %0       289   
 195.46.39.39     171.098     163.612     181.147     5.067       %0       276     QR -- -- RD RA -- --
 195.46.39.40     175.335     160.920     185.618     8.726       %0       274     QR -- -- RD RA -- --
 ```
+# dnseval.py -t A -f dns-list.txt -c10 seznam.cz
+server              avg(ms)     min(ms)     max(ms)     stddev(ms)  lost(%)  ttl        flags
+------------------------------------------------------------------------------------------------------------
+8.8.8.8             7.878       6.964       9.522       1.013       %0       226        QR -- -- RD RA -- --
+8.8.4.4             9.502       7.004       16.042      3.412       %0       225        QR -- -- RD RA -- --
+1.1.1.1             14.958      13.397      16.360      1.029       %0       170        QR -- -- RD RA -- --
+9.9.9.9             14.662      13.006      16.010      0.944       %0       280        QR -- -- RD RA -- --
+208.67.222.222      36.723      35.928      38.531      0.817       %0       280        QR -- -- RD RA -- --
+208.67.220.220      37.297      35.687      40.189      1.488       %0       86         QR -- -- RD RA -- --
+199.85.126.20       17.996      15.572      19.123      1.226       %0       279        QR -- -- RD RA -- --
+185.228.168.168     16.668      15.671      18.287      0.916       %0       280        QR -- -- RD RA -- --
+77.88.8.7           100.427     40.359      172.630     42.922      %0       280        QR -- -- RD RA -- --
+8.26.56.26          40.032      37.646      49.245      3.857       %20      281        QR -- -- RD RA -- --
+217.31.204.130      8.731       8.004       10.083      0.831       %0       140        QR -- -- RD RA -- --
+193.29.206.206      19.888      18.010      22.150      1.245       %0       281        QR -- -- RD RA -- --
+213.46.172.36       8.485       7.115       10.012      0.897       %0       246        QR -- -- RD RA -- --
+213.46.172.37       8.261       7.002       12.007      1.459       %0       232        QR -- -- RD RA -- --
 
 ### Author
 
